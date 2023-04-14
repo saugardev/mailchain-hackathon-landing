@@ -18,7 +18,7 @@ export default function Home() {
         </p>
         <div className="flex flex-wrap gap-4 mb-8">
         <a
-          href="https://www.npmjs.com/package/my-angular-library"
+          href="https://www.npmjs.com/package/@saugardev/angular-ui-components"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-white text-black border border-white py-3 px-8 rounded-full shadow-md hover:shadow-lg hover:bg-opacity-50 transition duration-200"
@@ -26,7 +26,7 @@ export default function Home() {
           Angular Library
         </a>
         <a
-          href="https://www.npmjs.com/package/my-react-library"
+          href="https://www.npmjs.com/package/@saugardev/react-ui-components"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-white text-black border border-white py-3 px-8 rounded-full shadow-md hover:shadow-lg hover:bg-opacity-50 transition duration-200"
