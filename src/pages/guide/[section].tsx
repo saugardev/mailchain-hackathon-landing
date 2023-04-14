@@ -2,6 +2,10 @@ import { useEffect, useRef, useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import Introduction from '../../components/Introduction';
+import Angular from '@/components/Angular';
+import React from '@/components/React';
+import NextJs from '@/components/NextJs';
 
 const sections = [
   { id: 'introduction', title: 'Introduction', route: '/guide/introduction' },
@@ -102,31 +106,18 @@ export default function Guide() {
       <section className="w-full md:max-w-3xl">
         <div className="bg-white p-6 rounded-lg shadow-md">
           {activeSection === 'introduction' && (
-            <div>
-              <h2 className="text-2xl font-bold mb-4">Introduction</h2>
-              <p>...</p>
-            </div>
+            <Introduction/>
           )}
 
           {activeSection === 'angular' && (
-            <div>
-              <h2 className="text-2xl font-bold mb-4">Angular Usage</h2>
-              <p>...</p>
-            </div>
+            <Angular/>
           )}
-
           {activeSection === 'react' && (
-            <div>
-              <h2 className="text-2xl font-bold mb-4">React Usage</h2>
-              <p>...</p>
-            </div>
+            <React/>
           )}
 
           {activeSection === 'nextjs' && (
-            <div>
-              <h2 className="text-2xl font-bold mb-4">Next.js Usage</h2>
-              <p>...</p>
-            </div>
+            <NextJs/>
           )}
         </div>
       </section>
