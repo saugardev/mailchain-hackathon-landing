@@ -6,12 +6,14 @@ import Introduction from '../../components/Introduction';
 import Angular from '@/components/Angular';
 import React from '@/components/React';
 import NextJs from '@/components/NextJs';
+import Installation from '@/components/Installation';
 
 const sections = [
   { id: 'introduction', title: 'Introduction', route: '/docs/introduction' },
+  { id: 'installation', title: 'Installation', route: '/docs/installation' },
   { id: 'angular', title: 'Angular Usage', route: '/docs/angular' },
   { id: 'react', title: 'React Usage', route: '/docs/react' },
-  { id: 'nextjs', title: 'Next.js Usage', route: '/docs/nextjs' },
+  // { id: 'nextjs', title: 'Next.js Usage', route: '/docs/nextjs' },
 ];
 
 export default function Section() {
@@ -108,14 +110,15 @@ export default function Section() {
           {activeSection === 'introduction' && (
             <Introduction/>
           )}
-
+          {activeSection === 'installation' && (
+            <Installation/>
+          )}
           {activeSection === 'angular' && (
             <Angular/>
           )}
           {activeSection === 'react' && (
             <React/>
           )}
-
           {activeSection === 'nextjs' && (
             <NextJs/>
           )}

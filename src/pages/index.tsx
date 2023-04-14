@@ -14,7 +14,7 @@ export default function Home() {
           Welcome to Mailchain UI Components!
         </h1>
         <p className="text-xl md:text-2xl text-white mb-8">
-          Configured web components for your Angular, React and Next.js projects.
+          Configured web components for your Angular and React projects.
         </p>
         <div className="flex flex-wrap gap-4 mb-8">
         <a
