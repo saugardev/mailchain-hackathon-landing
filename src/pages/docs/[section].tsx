@@ -14,7 +14,7 @@ const sections = [
   { id: 'nextjs', title: 'Next.js Usage', route: '/docs/nextjs' },
 ];
 
-export default function docs() {
+export default function Section() {
   const router = useRouter();
   const { section } = router.query;
 
