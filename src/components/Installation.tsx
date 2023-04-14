@@ -9,7 +9,7 @@ export default function Installation() {
       <ul className="list-disc pl-8 mb-8">
         <li className="mb-2">Open your terminal or command prompt</li>
         <li className="mb-2">Navigate to your project directory</li>
-        <li className="mb-2">Run the following command: <code className="bg-gray-200 rounded-md p-1">npm install react-ui-components</code></li>
+        <li className="mb-2">Run the following command: <code className="bg-gray-200 rounded-md p-1">npm install @saugardev/react-ui-components</code></li>
         <li className="mb-2">Wait for the installation to complete</li>
         <li className="mb-2">You can now import and use the library in your project</li>
       </ul>
@@ -17,7 +17,7 @@ export default function Installation() {
       <ul className="list-disc pl-8 mb-8">
         <li className="mb-2">Open your terminal or command prompt</li>
         <li className="mb-2">Navigate to your project directory</li>
-        <li className="mb-2">Run the following command: <code className="bg-gray-200 rounded-md p-1">npm install angular-ui-components</code></li>
+        <li className="mb-2">Run the following command: <code className="bg-gray-200 rounded-md p-1">npm install @saugardev/angular-ui-components</code></li>
         <li className="mb-2">Wait for the installation to complete</li>
         <li className="mb-2">You can now import and use the library in your project</li>
       </ul>
