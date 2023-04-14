@@ -8,13 +8,13 @@ import React from '@/components/React';
 import NextJs from '@/components/NextJs';
 
 const sections = [
-  { id: 'introduction', title: 'Introduction', route: '/guide/introduction' },
-  { id: 'angular', title: 'Angular Usage', route: '/guide/angular' },
-  { id: 'react', title: 'React Usage', route: '/guide/react' },
-  { id: 'nextjs', title: 'Next.js Usage', route: '/guide/nextjs' },
+  { id: 'introduction', title: 'Introduction', route: '/docs/introduction' },
+  { id: 'angular', title: 'Angular Usage', route: '/docs/angular' },
+  { id: 'react', title: 'React Usage', route: '/docs/react' },
+  { id: 'nextjs', title: 'Next.js Usage', route: '/docs/nextjs' },
 ];
 
-export default function Guide() {
+export default function docs() {
   const router = useRouter();
   const { section } = router.query;
 
@@ -38,7 +38,7 @@ export default function Guide() {
   return (
     <div className="min-h-screen bg-gray-100 font-roboto relative">
       <Head>
-        <title>Guide - My NPM Libraries</title>
+        <title>docs - My NPM Libraries</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -120,15 +120,16 @@ export default function Guide() {
             <NextJs/>
           )}
         </div>
+        <div className="container mx-auto py-4 px-4 text-center">
+          <Link href="/" scroll={false}>
+            <div className="text-blue-600 hover:text-blue-800 transition duration-200">
+              Back to Home
+            </div>
+          </Link>
+        </div>
       </section>
     </div>
-    <div className="container mx-auto py-4 px-4 text-center">
-      <Link href="/" scroll={false}>
-        <div className="text-blue-600 hover:text-blue-800 transition duration-200">
-          Back to Home
-        </div>
-      </Link>
-    </div>
+    
   </div>
 );
 }

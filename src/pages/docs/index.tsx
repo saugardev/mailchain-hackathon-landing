@@ -5,7 +5,7 @@ const RedirectToIntroduction = () => {
   const router = useRouter();
 
   useEffect(() => {
-    router.replace('/guide/introduction');
+    router.replace('/docs/introduction');
   }, [router]);
 
   return null;
